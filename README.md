@@ -10,5 +10,7 @@
 - **Styled components**
 
 Сборка: **Webpack**
+
 Тесты: **Jest**
+
 Линтинг, форматинг: **eslint, prettier**
