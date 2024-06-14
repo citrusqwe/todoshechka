@@ -2,8 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'plugin:react-hooks/recommended'],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,9 +14,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
     'react/react-in-jsx-scope': 0,
-    'import/no-unresolved': 0,
-    'import/extensions': 0,
+    'react/display-name': 0,
+    'react/prop-types': 0,
   },
 };

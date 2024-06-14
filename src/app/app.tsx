@@ -1,25 +1,18 @@
+import { HomePage } from 'pages/todo';
 import styled from 'styled-components';
 import './styles/app.css';
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: #bf4f74;
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 `;
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
-
-const App = () => {
-  return (
-    <div>
-      <Wrapper>
-        <Title>Title</Title>
-      </Wrapper>
-    </div>
-  );
-};
+const App = () => (
+  <Wrapper>
+    <HomePage />
+  </Wrapper>
+);
 
 export default App;

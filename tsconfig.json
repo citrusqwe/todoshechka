@@ -22,7 +22,7 @@
       "dom",
       "es5",
       "scripthost"
-    ]
+    ],
   },
   "ts-node": {
     "compilerOptions": {

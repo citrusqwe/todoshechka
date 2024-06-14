@@ -9,6 +9,7 @@ const plugins = [
   }),
   new webpack.EnvironmentPlugin({
     MODE: 'development',
+    STORAGE_KEY: 'todoshecki',
   }),
 ];
 
