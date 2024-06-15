@@ -9,7 +9,7 @@ import { StorageService } from 'shared/utils/storage/storage';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width: var(--wrapper-width);
+  max-width: var(--wrapper-width);
 `;
 
 const Header = styled.div`

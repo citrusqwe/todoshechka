@@ -11,7 +11,7 @@ interface TodoListProps {
   items: Todo[];
 }
 
-const List = styled.div`
+const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: var(--gap-md);

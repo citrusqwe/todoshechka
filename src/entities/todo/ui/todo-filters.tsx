@@ -13,7 +13,7 @@ const FiltersWrapper = styled.div`
 
   @media only screen and (${devices.sm}) {
     flex-direction: column;
-    gap: var(--gap-sm);
+    gap: var(--gap-md);
     align-items: unset;
   }
 `;

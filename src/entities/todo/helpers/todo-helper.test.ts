@@ -3,9 +3,9 @@ import { FilterActionState } from '../model/types/todo-filters';
 import { filteredTodos } from './todo-helper';
 
 const todosMock: Todo[] = [
-  { id: '1', title: '11', date: new Date().toLocaleDateString(), completed: false },
-  { id: '2', title: '22', date: new Date().toLocaleDateString(), completed: true },
-  { id: '3', title: '33', date: new Date().toLocaleDateString(), completed: false },
+  { id: '1', title: '11', date: Date.now(), completed: false },
+  { id: '2', title: '22', date: Date.now(), completed: true },
+  { id: '3', title: '33', date: Date.now(), completed: false },
 ];
 
 describe('todo-helper', () => {

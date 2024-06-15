@@ -13,7 +13,7 @@ interface TodoItemProps {
   item: Todo;
 }
 
-const Item = styled.div`
+const Item = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,18 +23,23 @@ const Item = styled.div`
   border-radius: var(--border-radius);
   background: var(--primary-color);
   border: 2px solid var(--border-color);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: break-spaces;
+  word-break: break-all;
 `;
 
 const ItemBody = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   gap: var(--gap-sm);
 `;
 
-const ItemTitle = styled.p`
+const ItemContent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const ItemTitle = styled.span`
   font-weight: 500;
   color: var(--title-color);
   font-size: var(--font-size-lg);
@@ -93,8 +98,8 @@ export const TodoItem: FC<TodoItemProps> = memo(({ item: { id, title, completed,
     <Item>
       <ItemBody>
         <Checkbox checked={completed} onChange={handleCompletedChange} />
-        <div>
-          <ItemDate>{date}</ItemDate>
+        <ItemContent>
+          <ItemDate>{new Date(date).toLocaleDateString()}</ItemDate>
           <ItemTitle
             ref={titleRef}
             contentEditable={isUpdating}
@@ -105,7 +110,7 @@ export const TodoItem: FC<TodoItemProps> = memo(({ item: { id, title, completed,
           >
             {title}
           </ItemTitle>
-        </div>
+        </ItemContent>
       </ItemBody>
       <ItemActions>
         <Button variant="icon" disabled={isUpdating} onClick={startUpdating}>

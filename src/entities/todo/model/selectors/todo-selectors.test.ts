@@ -5,9 +5,9 @@ import { FilterActionState } from '../types/todo-filters';
 import { getActiveTodosLength, getFilteredTodos, getIsTodosEmpty, getTodoFilter } from './todo-selectors';
 
 const todosMock: Todo[] = [
-  { id: '1', title: 'first1', date: new Date().toLocaleDateString(), completed: false },
-  { id: '2', title: 'first2', date: new Date().toLocaleDateString(), completed: true },
-  { id: '3', title: 'first3', date: new Date().toLocaleDateString(), completed: true },
+  { id: '1', title: 'first1', date: Date.now(), completed: false },
+  { id: '2', title: 'first2', date: Date.now(), completed: true },
+  { id: '3', title: 'first3', date: Date.now(), completed: true },
 ];
 
 describe('todo selectors', () => {

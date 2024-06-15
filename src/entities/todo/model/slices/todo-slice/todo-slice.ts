@@ -6,6 +6,7 @@ import { TodoState } from '../../types/todo-state';
 
 export const todosAdapter = createEntityAdapter({
   selectId: (todo: Todo) => todo.id,
+  sortComparer: (a: Todo, b: Todo) => b.date - a.date,
 });
 
 export const todoSlice = createSlice({

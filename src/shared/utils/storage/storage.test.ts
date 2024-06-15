@@ -3,7 +3,7 @@ import { StorageService } from './storage';
 
 const key = 'test';
 const storage = new StorageService(key);
-const todosMock: Todo[] = [{ id: 'first', title: 'first', date: new Date().toLocaleDateString(), completed: false }];
+const todosMock: Todo[] = [{ id: 'first', title: 'first', date: Date.now(), completed: false }];
 
 describe('storage service', () => {
   test('set', () => {

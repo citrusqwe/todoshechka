@@ -39,9 +39,10 @@ export const TodoCreateField = () => {
       id: uuid(),
       title: todoTitle,
       completed: false,
-      date: new Date().toLocaleString(),
+      date: Date.now(),
     };
     dispatch(todoActions.addTodo(todo));
+    setTodoTitle('');
   };
 
   return (
@@ -49,6 +50,7 @@ export const TodoCreateField = () => {
       <Input
         css={inputStyles}
         placeholder="What would you like to do?"
+        value={todoTitle}
         onChange={handleTitleChange}
         onKeyDown={createTodo}
       />
