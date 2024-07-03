@@ -10,23 +10,6 @@ const devServer = {
   historyApiFallback: true,
   hot: true,
   port: 3000,
-
-  // open: true,
-  // compress: true,
-  // allowedHosts: 'all',
-  // port: 3000,
-  // historyApiFallback: true,
-  // hot: true,
-  // client: {
-  //   overlay: {
-  //     errors: true,
-  //     warnings: true,
-  //   },
-  //   progress: true,
-  // },
-  // devMiddleware: {
-  //   writeToDisk: true,
-  // },
 };
 
 module.exports = {

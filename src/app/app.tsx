@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import './styles/app.css';
 
 const Wrapper = styled.div`
-  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@
 - **Redux Toolkit**
 - **Styled components**
 
-Сборка: **Webpack**
+Сборка: **Webpack**(небольшая кастомная сборка с парой лоадеров и плагинов)
 
 Тесты: **Jest**
 
